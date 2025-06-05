@@ -1,15 +1,35 @@
-# 🚀 C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı
+# C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Tkinter](https://img.shields.io/badge/Tkinter-GUI-green)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+C programlama dilinde yazdığınız kodları **anında analiz eden ve renklendiren** modern bir masaüstü uygulama!
 
-> **C kodunuzu anında analiz edin, vurgulayın ve yapısını keşfedin!**
+## Nedir?
+Bu uygulama, C kodunuzu yazarken hem sözcüksel (token) hem de sözdizimsel (parse tree) analizini **gerçek zamanlı** olarak yapar ve kodunuzu renkli şekilde vurgular. Kodun yapısını, anahtar kelimeleri, operatörleri, değişkenleri ve daha fazlasını kolayca görebilirsiniz.
+
+## Kimler İçin?
+- C dilini öğrenen öğrenciler
+- Kodun yapısını görsel olarak anlamak isteyenler
+- Eğitimciler ve sunum hazırlayanlar
+- C kodunu hızlıca analiz etmek isteyen herkes
+
+## Temel Özellikler
+- **Gerçek zamanlı syntax highlighting** (renkli vurgulama)
+- **Parse tree** (sözdizimi ağacı) ile kodun yapısını görselleştirme
+- **Token listesi** ile kodun sözcüksel analizini gösterme
+- Kullanıcı dostu, sade ve hızlı arayüz
+- Ekstra kütüphane gerektirmez (sadece Python ve Tkinter)
+
+## Nasıl Çalışır?
+1. Uygulamayı başlatın.
+2. Sol panele C kodunuzu yazın veya yapıştırın.
+3. Sağda kodun yapısını (parse tree) ve token listesini anında görün.
+4. Kodunuzun geçerli olup olmadığını durum çubuğunda takip edin.
+
+
 
 ---
 
 ## 📚 Proje Hakkında
-Bu masaüstü uygulaması, C programlama dilinde yazılmış kodları **gerçek zamanlı** olarak analiz eder. Kodunuzu yazarken hem sözcüksel (token) hem de sözdizimsel (parse tree) analizini ve vurgulamasını anında görebilirsiniz. Eğitim, öğretim ve pratik için idealdir.
+Bu masaüstü uygulaması, C programlama dilinde yazılmış kodları **gerçek zamanlı** olarak analiz eder. Kodunuzu yazarken hem sözcüksel (token) hem de sözdizimsel (parse tree) analizini ve vurgulamasını anında görebilirsiniz.
 
 ---
 
@@ -79,24 +99,4 @@ int main() {
 MIT Lisansı. Ayrıntılar için `LICENSE` dosyasına bakınız.
 
 ---
-
-## 🎓 Akademik Kullanım
-Bu proje, üniversite derslerinde, ödevlerde ve sunumlarda kullanılmak üzere tasarlanmıştır. Dökümantasyon ve rapor örnekleri için `PROJE_DOKUMANTASYON.md` dosyasına bakabilirsiniz.
-
----
-
-## ❓ Sıkça Sorulan Sorular (SSS)
-
-**S: Proje neden sadece standart kütüphaneleri kullanıyor?**  
-C: Kolay kurulum ve taşınabilirlik için, ek bağımlılık gerektirmeden çalışır.
-
-**S: Parse tree neden bazı kodlarda UNKNOWN gösteriyor?**  
-C: Şu anki parser temel C yapıları için optimize edilmiştir. Daha gelişmiş C özellikleri için parser genişletilebilir.
-
-**S: Renkleri veya arayüzü nasıl değiştirebilirim?**  
-C: `c_syntax_highlighter.py` dosyasındaki renk ve stil ayarlarını güncelleyebilirsiniz.
-
----
-
-**Hazırlayan:** [Adınız Soyadınız]  
-**Tarih:** [Tarih]
+ 
