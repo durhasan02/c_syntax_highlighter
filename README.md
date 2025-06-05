@@ -30,7 +30,8 @@ Kendi C kodunuzu yazarken hem renklendirme hem de “parse tree” ve “token l
 ---
 
 ## 📸 Ekran Görüntüsü
-(https://github.com/user-attachments/assets/4d4223b0-9df5-40d1-b0cd-7caac088d13f)
+
+
 
 ---
 
@@ -46,17 +47,7 @@ Kendi C kodunuzu yazarken hem renklendirme hem de “parse tree” ve “token l
     - Sağ panelde “Parse Tree” ve “Token Listesi” anında güncellenecek
     - Alt kısımda geçerlilik durumu görünecek
 
-**Örnek C kodu:**
-```c
-#include <stdio.h>
-int main() {
-    int x = 42;
-    // Yorum satırı
-    if (x > 10) {
-        printf("C syntax highlighter!");
-    }
-    return 0;
-}
+
 🔬 Nasıl Çalışıyor?
 LexicalAnalyzer: Regex kullanarak C kodunu token’lara böler.
 
