@@ -1,88 +1,109 @@
-# C Syntax Highlighter
+# C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı
 
-<div align="center">
-  <img src="https://img.shields.io/badge/python-3.7+-blue.svg" alt="Python 3.7+">
-  <img src="https://img.shields.io/badge/Tkinter-GUI-brightgreen.svg" alt="Tkinter GUI">
-  <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="MIT License">
-</div>
+Bu proje, **C programlama dili** ile yazılmış kodların gerçek zamanlı olarak sözcüksel ve sözdizimsel analizini yapan, aynı zamanda sözdizimi vurgulaması (syntax highlighting) sağlayan bir masaüstü uygulamasıdır.
 
-> **Modern ve interaktif bir “C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı ve Analiz Aracı”  
-> Python & Tkinter ile, sade ve etkili bir masaüstü deneyimi.**
+Kullanıcılar, C kodu yazarken kodun yapısı ve tokenları anında görsel olarak sunulmakta; hem eğitim hem de pratik amaçlı, C dilinin temel özellikleri kolayca anlaşılabilmektedir.
 
 ---
 
-## 🚩 Kısa Tanıtım
+## Özellikler
 
-**C Syntax Highlighter**:  
-C programlama dili için hazırlanmış, gerçek zamanlı vurgulama ve sözdizim analiz aracı.  
-Kendi C kodunuzu yazarken hem renklendirme hem de “parse tree” ve “token listesi” anlık gösterilir.
-
----
-
-## 🎯 Temel Özellikler
-
-- **Gerçek zamanlı sözdizimi vurgulama**: Anahtar kelimeler, tanımlayıcılar, sayılar, stringler, yorumlar ve operatörler otomatik renklenir.
-- **Sözcüksel analiz**: Kodun tüm parçaları (token) listelenir.
-- **Sentaks analizi**: Kodun yapısı “parse tree” olarak gösterilir.
-- **Modern ve anlaşılır arayüz**: Tkinter ile responsive ve kolay kullanılır GUI.
-- **Tamamen Python standardı**: Ekstra paket kurulumu gerekmez.
+- C dilinin temel sözdizimi kurallarına uygun **sözcüksel ve sözdizimsel analiz**
+- En az 5 farklı token türünü **gerçek zamanlı vurgulama**
+- **Kullanıcı dostu ve etkileşimli arayüz**
+- **Token listesi** ve **sözdizimi ağacı** (parse tree) görsel gösterimi
+- Akademik standartlara uygun **belgelenmiş rapor**
 
 ---
 
-## 📸 Ekran Görüntüsü
+## Dil ve Gramer
+
+**Neden C Dili?**
+- Hem eğitimde hem de endüstride yaygın, açık gramerli, sembolik bir dil olduğu için tercih edilmiştir.
+
+**Kullanılan Basit C Grameri:**
+```bnf
+program           -> statement_list
+statement         -> declaration | function_definition | assignment | if_stmt | while_stmt | for_stmt | expression_stmt
+declaration       -> type IDENTIFIER [= expression] ;
+function_definition -> type IDENTIFIER ( [params] ) block
+expression        -> simple_expression ([comparison_op] simple_expression)*
+simple_expression -> term ((+|-) term)*
+term              -> factor ((*|/) factor)*
+factor            -> NUMBER | IDENTIFIER | STRING | ( expression )
+```
+
+
+Analiz Süreci
+Sözcüksel Analiz (Lexical Analysis):
+Kod, anlamlı en küçük birimlere (token) ayrılır ve her biri tipine göre sınıflandırılır.
+
+Sözdizimi Analizi (Syntax Analysis):
+Tokenlar, gramer kurallarına göre bir sözdizimi ağacına (parse tree) dönüştürülür
 
 
 
----
-
-## 📝 Kullanım Senaryosu
-
-1. Uygulamayı başlat:
-    ```bash
-    python c_syntax_highlighter.py
-    ```
-2. Açılan pencerede sol tarafa C kodunuzu yazın.
-3. Kodunuzu yazdıkça:
-    - Kodunuz renklenecek
-    - Sağ panelde “Parse Tree” ve “Token Listesi” anında güncellenecek
-    - Alt kısımda geçerlilik durumu görünecek
+| Token Türü     | Renk    | Açıklama                |
+| -------------- | ------- | ----------------------- |
+| Anahtar Kelime | Mavi    | int, if, return, ...    |
+| Tanımlayıcı    | Siyah   | main, a, counter, ...   |
+| Operatör       | Kırmızı | +, -, \*, /, =, ==, ... |
+| Sayı           | Yeşil   | 42, 3.14, ...           |
+| String         | Turuncu | "Merhaba"               |
+| Yorum          | Gri     | // yorum, /\* ... \*/   |
+| Ön İşlemci     | Mor     | #include, #define, ...  |
 
 
-🔬 Nasıl Çalışıyor?
-LexicalAnalyzer: Regex kullanarak C kodunu token’lara böler.
+Teknik Detaylar
 
-Parser: Temel C gramerini analiz eder, parse tree oluşturur.
+Kullanılan Teknolojiler
+Python 3
+Tkinter (GUI için)
 
-GUI: Tkinter ile kod editörü + analiz çıktısı paneli.
+Arayüz Özellikleri
 
-Kodunuzu yazarken veya yapıştırırken, hem görsel vurgulama hem de yapısal analiz elde edersiniz.
-🏗️ Proje Dosya Yapısı
-├── c_syntax_highlighter.py   # Tüm kod burada
-├──README.md
-├──Dökümantasyon
+Kod Editörü: Sol panelde C kodu yazma ve düzenleme
 
-🔥 Özellikleri Kısaca
-Renkli kod vurgusu:
+Parse Tree Görselleştirmesi: Sağ üstte anlık olarak gösterim
 
-int, if, while, return → Mavi
+Token Listesi: Sağ altta tokenların listesi
 
-Stringler → Turuncu
+Durum Çubuğu: Alt kısımda sözdizimi geçerliliği
 
-Sayılar → Yeşil
+Gerçek Zamanlı Vurgulama: Kodda her değişiklikte analiz ve vurgulama
 
-Operatörler → Kırmızı
-
-Yorumlar → Gri
-
-Preprocessor → Mor
-
-Parse Tree:
-Kodun yapısal analizi hiyerarşik olarak gösterilir.
-
-Token Listesi:
-Her satırda; tip ve değer olarak.
-
-Medium Makale:
+Klavye Kısayolları: Temel editör kısayolları desteği
 
 
+Örnek
+c
+Kopyala
+Düzenle
+int main() {
+    int a = 5;
+    a = a + 10;
+    return 0;
+}
+Token Listesi Tablosu:
+
+Token Tipi	Değer
+KEYWORD	int
+IDENTIFIER	main
+...	...
+
+Örnek Parse Tree (Metinsel):
+
+yaml
+Kopyala
+Düzenle
+Program
+  FUNCTION_DEFINITION
+    TYPE: int
+    NAME: main
+    BODY
+      DECLARATION: int a = 5
+      ASSIGNMENT: a = a + 10
+      RETURN_STATEMENT: 0
+
+      
 
