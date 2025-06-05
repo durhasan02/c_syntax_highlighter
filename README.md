@@ -76,26 +76,23 @@ Klavye Kısayolları: Temel editör kısayolları desteği
 
 
 Örnek
-c
-Kopyala
-Düzenle
+```
 int main() {
     int a = 5;
     a = a + 10;
     return 0;
 }
-Token Listesi Tablosu:
+```
+| Token Tipi | Değer |
+| ---------- | ----- |
+| KEYWORD    | int   |
+| IDENTIFIER | main  |
+| ...        | ...   |
 
-Token Tipi	Değer
-KEYWORD	int
-IDENTIFIER	main
-...	...
 
 Örnek Parse Tree (Metinsel):
 
-yaml
-Kopyala
-Düzenle
+```
 Program
   FUNCTION_DEFINITION
     TYPE: int
@@ -104,6 +101,9 @@ Program
       DECLARATION: int a = 5
       ASSIGNMENT: a = a + 10
       RETURN_STATEMENT: 0
+
+```
+
 
       
 
