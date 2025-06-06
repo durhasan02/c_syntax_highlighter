@@ -77,7 +77,7 @@ Parse Tree: Fonksiyon, değişken tanımı, kontrol yapıları ve daha fazlası 
 
 
 Renkler:
-
+```
 Token Türü	Renk
 Anahtar Kelime	Mavi
 Tanımlayıcı	Siyah
@@ -86,7 +86,7 @@ Sayı	Yeşil
 String	Turuncu
 Yorum	Gri
 Ön İşlemci	Mor
-
+```
 
 Proje Dosya Yapısı
 ```
