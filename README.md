@@ -26,6 +26,7 @@ Sadece Python standart kütüphaneleri ile geliştirilmiştir. Eğitim, öğreti
 
 ## 🖥️ Ekran Görüntüsü
 
+![Ekran görüntüsü 2025-06-06 013139](https://github.com/user-attachments/assets/827fa025-b00d-475a-8c20-774b13052d0a)
 
 
 ---
