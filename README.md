@@ -1,142 +1,111 @@
-# C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı
+# Gerçek Zamanlı C Dili Sözdizimi Vurgulayıcı
 
-C programlama dilinde yazdığınız kodları **anında analiz eden ve renklendiren** modern bir masaüstü uygulama!
-
-## Proje Özeti
-Bu uygulama, C kodunuzu yazarken hem sözcüksel (token) hem de sözdizimsel (parse tree) analizini **gerçek zamanlı** olarak yapar ve kodunuzu renkli şekilde vurgular. Kodun yapısını, anahtar kelimeleri, operatörleri, değişkenleri ve daha fazlasını kolayca görebilirsiniz.
-
-## Temel Özellikler
-- Gerçek zamanlı syntax highlighting (renkli vurgulama)
-- Parse tree (sözdizimi ağacı) ile kodun yapısını görselleştirme
-- Token listesi ile kodun sözcüksel analizini gösterme
-- Kullanıcı dostu, sade ve hızlı arayüz
-- Ekstra kütüphane gerektirmez (sadece Python ve Tkinter)
-
-## Hızlı Başlangıç
-1. Python 3.x yüklü olmalı.
-2. Proje klasöründe terminal açın ve çalıştırın:
-   ```bash
-   python c_syntax_highlighter.py
-   ```
-3. Sol panele C kodunuzu yazın veya yapıştırın.
-4. Sağda kodun yapısını (parse tree) ve token listesini anında görün.
-
-## Örnek Kod
-```c
-int main() {
-    int a = 5;
-    a = a + 10;
-    return 0;
-}
-```
-
-## Vurgulama Renk Tablosu
-| Token Türü         | Renk      |
-|--------------------|-----------|
-| Anahtar Kelime     | Mavi      |
-| Tanımlayıcı        | Siyah     |
-| Operatör           | Kırmızı   |
-| Sayı               | Yeşil     |
-| String             | Turuncu   |
-| Yorum              | Gri       |
-| Ön İşlemci         | Mor       |
-
-## Katkı ve İletişim
-Katkıda bulunmak veya öneri/geri bildirim iletmek için lütfen bir issue açın veya pull request gönderin.
-
----
-**Hazırlayan:** [Adınız Soyadınız]  
-**Tarih:** [Tarih]
-
-## 📚 Proje Hakkında
-Bu masaüstü uygulaması, C programlama dilinde yazılmış kodları **gerçek zamanlı** olarak analiz eder. Kodunuzu yazarken hem sözcüksel (token) hem de sözdizimsel (parse tree) analizini ve vurgulamasını anında görebilirsiniz. Eğitim, öğretim ve pratik için idealdir.
+<div align="center">
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg">
+  <img src="https://img.shields.io/badge/gui-tkinter-informational">
+  <img src="https://img.shields.io/badge/durum-aktif-success">
+  <br>
+  <strong>Anında sözcüksel ve sözdizimsel analiz, canlı vurgulama — modern, eğitim odaklı masaüstü uygulama</strong>
+</div>
 
 ---
 
-## 🎯 Özellikler
-- **Gerçek Zamanlı Sözdizimi Vurgulama**: Kod yazarken anında renkli vurgulama
-- **Sözcüksel Analiz (Tokenization)**: Kodun tokenlara ayrılmış hali
-- **Sözdizimi Analizi (Parse Tree)**: Kodun yapısal ağacı
-- **Kullanıcı Dostu Arayüz**: Modern ve sade Tkinter GUI
-- **Durum Çubuğu**: Kodun geçerli olup olmadığını anında gösterir
-- **Akademik Kullanıma Uygun**: Rapor ve sunumlar için ideal
-- **Sadece Standart Kütüphaneler**: Ekstra bağımlılık yok
+## 🚀 Genel Bakış
+
+**C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı**, C kodunu yazarken canlı sözcüksel analiz (tokenizasyon), sözdizimi analizi (parse tree) ve renklendirme (syntax highlighting) özelliklerini bir arada sunan bir masaüstü uygulamadır.  
+Kodunuzu yazarken:
+- **Hemen renklendirilmiş haliyle** görürsünüz
+- **Token listesine** ve
+- **Sözdizimi ağacına (parse tree)** anında ulaşabilirsiniz  
+Sadece Python standart kütüphaneleri ile geliştirilmiştir. Eğitim, öğretim ve deneme amaçları için idealdir.
 
 ---
 
-## ⚡️ Hızlı Başlangıç
-1. **Python 3.x** yüklü olmalı.
-2. Proje klasöründe terminal açın ve çalıştırın:
-   ```bash
-   python c_syntax_highlighter.py
-   ```
-3. Sol panelde C kodunuzu yazın veya yapıştırın.
-4. Sağda hem **parse tree** hem de **token listesi** anında güncellenir.
+## ✨ Özellikler
+
+- **Gerçek Zamanlı Geri Bildirim:** Kod yazılırken anında renklendirme, token ve parse tree güncellenir.
+- **Eğitsel Parse Tree:** C kodunun hiyerarşik yapısını görsel olarak inceleyin.
+- **Modüler Mimari:** Lexer (sözcüksel analiz), parser (sözdizimi analiz) ve arayüz (GUI) tamamen ayrık ve geliştirilebilir.
+- **Hata Farkındalığı:** Tanınmayan veya eksik yapılar "UNKNOWN" olarak belirtilir, hata tespiti kolaylaşır.
 
 ---
 
 ## 🖥️ Ekran Görüntüsü
-![Ekran Görüntüsü](docs/screenshot.png)
+
+<p align="center">
+  <img src="https://i.imgur.com/B5LtsDG.png" alt="syntax highlighter screenshot" width="600"><br>
+  <em>Kod yaz, token ve parse tree anında gör!</em>
+</p>
 
 ---
 
-## 💡 Örnek Kod ve Analiz
-```c
+## 📦 Kurulum
+
+**Gereksinimler:**  
+- Python 3.8 veya üzeri  
+- Ekstra kütüphane gerekmez (`tkinter`, `re`, `enum` Python ile birlikte gelir)
+
+```bash
+git clone https://github.com/kullanici-adin/c-syntax-highlighter.git
+cd c-syntax-highlighter
+python c_syntax_highlighter.py
+```
+Nasıl Çalışır?
+Lexer (Sözcüksel Analiz):
+C kodunu anahtar kelime, tanımlayıcı, operatör, sayı, string, yorum, ön işlemci ve ayraçlara böler.
+
+Parser (Sözdizimi Analizi):
+Recursive descent algoritması ile sadeleştirilmiş C dilinin grammar’ına uygun olarak parse tree oluşturur (fonksiyon, değişken, atama, kontrol yapıları, ifadeler).
+
+Arayüz (GUI / Tkinter):
+
+Sol: Canlı kod editörü
+
+Sağ: Parse tree ve token listesi
+
+Alt: Kodun geçerli olup olmadığını gösteren durum çubuğu
+```
 int main() {
-    int a = 5;
-    a = a + 10;
-    return 0;
+  int a = 5;
+  if (a > 0) {
+    a = a + 1;
+  }
+  return a;
 }
 ```
+Sonuçlar anında:
 
-| Token Türü         | Renk      | Açıklama                       |
-|--------------------|-----------|--------------------------------|
-| Anahtar Kelime     | Mavi      | int, if, return, ...           |
-| Tanımlayıcı        | Siyah     | main, a, counter, ...          |
-| Operatör           | Kırmızı   | +, -, *, /, =, ==, ...         |
-| Sayı               | Yeşil     | 42, 3.14, ...                  |
-| String             | Turuncu   | "Merhaba"                      |
-| Yorum              | Gri       | // yorum, /* ... */            |
-| Ön İşlemci         | Mor       | #include, #define, ...         |
+Token listesi: KEYWORD int, IDENTIFIER main, PAREN_OPEN (, ...
 
----
+Parse Tree: Fonksiyon, değişken tanımı, kontrol yapıları ve daha fazlası görselleştirilir
 
-## 🛠️ Özelleştirme ve Geliştirme
-- **Daha fazla C özelliği** (struct, dizi, fonksiyon çağrısı, pointer) ekleyebilirsiniz.
-- **Parse tree**'yi grafiksel olarak gösterebilirsiniz.
-- Kod tamamlama, hata öneri sistemi gibi gelişmiş özellikler eklenebilir.
+Renkler:
 
----
+Token Türü	Renk
+Anahtar Kelime	Mavi
+Tanımlayıcı	Siyah
+Operatör	Kırmızı
+Sayı	Yeşil
+String	Turuncu
+Yorum	Gri
+Ön İşlemci	Mor
 
-## 👩‍💻 Katkı ve İletişim
-- Katkıda bulunmak için fork'layın ve pull request gönderin.
-- Sorularınız veya önerileriniz için issue açabilirsiniz.
-- Akademik kullanımda kaynak gösterebilirsiniz.
+Proje Dosya Yapısı
+```
+c_syntax_highlighter.py              # Ana Python uygulaması (tüm mantık ve arayüz)
+DOKUMANTASYON.md                     # Teknik ve detaylı Türkçe dokümantasyon
+README.md                            # (Bu dosya)
 
----
+```
+Sınırlamalar ve Geliştirme Fikirleri
+Sadece temel C yapılarını destekler (fonksiyon, atama, kontrol yapıları, temel ifadeler).
 
-## 📄 Lisans
-MIT Lisansı. Ayrıntılar için `LICENSE` dosyasına bakınız.
+Gelişmiş C özellikleri (struct, pointer, dizi, fonksiyon işaretçisi vb.) için parser’ı genişletebilirsiniz.
 
----
+Çok büyük kod dosyalarında arayüz yavaşlayabilir (Tkinter kısıtlaması).
 
-## 🎓 Akademik Kullanım
-Bu proje, üniversite derslerinde, ödevlerde ve sunumlarda kullanılmak üzere tasarlanmıştır. Dökümantasyon ve rapor örnekleri için `PROJE_DOKUMANTASYON.md` dosyasına bakabilirsiniz.
+Regex tabanlı tokenizer; uç durumlar için ek ince ayar gerekebilir.
+📚 Detaylı Teknik Dökümantasyon
+Daha fazla detay ve kod içi açıklamalar için:
+📄 DOKUMANTASYON.md
 
----
-
-## ❓ Sıkça Sorulan Sorular (SSS)
-
-**S: Proje neden sadece standart kütüphaneleri kullanıyor?**  
-C: Kolay kurulum ve taşınabilirlik için, ek bağımlılık gerektirmeden çalışır.
-
-**S: Parse tree neden bazı kodlarda UNKNOWN gösteriyor?**  
-C: Şu anki parser temel C yapıları için optimize edilmiştir. Daha gelişmiş C özellikleri için parser genişletilebilir.
-
-**S: Renkleri veya arayüzü nasıl değiştirebilirim?**  
-C: `c_syntax_highlighter.py` dosyasındaki renk ve stil ayarlarını güncelleyebilirsiniz.
-
----
-
-**Hazırlayan:** [Adınız Soyadınız]  
-**Tarih:** [Tarih] 
