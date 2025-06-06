@@ -97,7 +97,10 @@ Gelişmiş C özellikleri (struct, pointer, dizi, fonksiyon işaretçisi vb.) i�
 Çok büyük kod dosyalarında arayüz yavaşlayabilir (Tkinter kısıtlaması).
 
 Regex tabanlı tokenizer; uç durumlar için ek ince ayar gerekebilir.
+
 📚 Detaylı Teknik Dökümantasyon
-Daha fazla detay ve kod içi açıklamalar için:
-📄 DOKUMANTASYON.md
+[Dökümantasyon.](DOKUMANTASYON.md)
+
+
+
 
