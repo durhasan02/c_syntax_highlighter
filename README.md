@@ -87,7 +87,7 @@ Proje Dosya Yapısı
 c_syntax_highlighter.py              # Ana Python uygulaması (tüm mantık ve arayüz)
 DOKUMANTASYON.md                     # Teknik ve detaylı Türkçe dokümantasyon
 README.md                            # (Bu dosya)
-
+Ekran Görüntüsü                      
 ```
 Sınırlamalar ve Geliştirme Fikirleri
 Sadece temel C yapılarını destekler (fonksiyon, atama, kontrol yapıları, temel ifadeler).
@@ -99,8 +99,11 @@ Gelişmiş C özellikleri (struct, pointer, dizi, fonksiyon işaretçisi vb.) i�
 Regex tabanlı tokenizer; uç durumlar için ek ince ayar gerekebilir.
 
 📚 Detaylı Teknik Dökümantasyon
+
 [Dökümantasyon.](DOKUMANTASYON.md)
 
+Makale:
+[makale]( )
 
 
 
