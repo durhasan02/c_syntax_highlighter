@@ -1,12 +1,6 @@
 # Gerçek Zamanlı C Dili Sözdizimi Vurgulayıcı
 
-<div align="center">
-  <img src="https://img.shields.io/badge/python-3.8+-blue.svg">
-  <img src="https://img.shields.io/badge/gui-tkinter-informational">
-  <img src="https://img.shields.io/badge/durum-aktif-success">
-  <br>
-  <strong>Anında sözcüksel ve sözdizimsel analiz, canlı vurgulama — modern, eğitim odaklı masaüstü uygulama</strong>
-</div>
+
 
 ---
 
@@ -33,7 +27,8 @@ Sadece Python standart kütüphaneleri ile geliştirilmiştir. Eğitim, öğreti
 ## 🖥️ Ekran Görüntüsü
 
 <p align="center">
-  <img src="https://i.imgur.com/B5LtsDG.png" alt="syntax highlighter screenshot" width="600"><br>
+  <img src="![Ekran görüntüsü 2025-06-06 013139](https://github.com/user-attachments/assets/7cdb5358-5405-4ebc-a603-28e43c602965)
+" alt="syntax highlighter screenshot" width="600"><br>
   <em>Kod yaz, token ve parse tree anında gör!</em>
 </p>
 
