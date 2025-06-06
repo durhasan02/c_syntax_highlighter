@@ -1,4 +1,4 @@
-# C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı - Kod Açıklamalı Dökümantasyon
+# C Dili Gerçek Zamanlı Sözdizimi Vurgulayıcı -  Dökümantasyon
 
 ---
 
